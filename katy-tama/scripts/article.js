@@ -79,10 +79,10 @@ body.append(c)
 
 console.log('sdfsf', c)
 
-// console.log('sdfsfd')
-// for(let i = 0; i < articles.length; i++) {
-//   $('#articles').append(articles[i].toHtml());
-// }
+console.log('sdfsfd')
+for(let i = 0; i < articles.length; i++) {
+  $('#articles').append(articles[i].toHtml());
+}
 
 // articles.forEach(function(x){
 //   $('#articles').append(x.toHtml());
