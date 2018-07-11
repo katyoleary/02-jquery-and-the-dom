@@ -56,10 +56,21 @@ rawData.sort(function(a,b) {
 
 // TODO: Refactor these for loops using the .forEach() array method.
 
-rawData.forEach(function(articleObject){
-  articles.push(new Article(articleObject))
+
+rawData.forEach(function(x){
+  console.log(x);
+  articles.push(new Article(x))
 });
 
-articles.forEach(function(article){
-  $('#articles').append(article.toHtml());
-});
+let c = articles[0].toHtml()[0];
+
+let body = document.querySelector('body')
+body.append(c)
+
+console.log('sdfsf', c)
+
+
+
+// articles.forEach(function(article){
+//   $('#articles').append(article.toHtml());
+// });
